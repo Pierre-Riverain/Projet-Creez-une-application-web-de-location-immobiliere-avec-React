@@ -1,0 +1,16 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 56px 50px;
+    gap: 60px 50px;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+    z-index: -10;
+
+    &-container {
+        z-index: -10;
+    }
+    li {
+        list-style: none;
+    }
+}

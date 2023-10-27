@@ -1,0 +1,20 @@
+.home-section {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
