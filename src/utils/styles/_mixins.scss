@@ -1,0 +1,15 @@
+@mixin responsive($screen-responsive-width-size-selected) {
+    @media screen and (max-width: map-get($screen-responsive-width-size, $screen-responsive-width-size-selected)) {
+        @content;
+    }
+}
+
+@mixin font-style($size, $weight: 500) {
+    font-family: "Montserrat", sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin color($color-selected: main) {
+    color: map-get($color, $color-selected);
+}

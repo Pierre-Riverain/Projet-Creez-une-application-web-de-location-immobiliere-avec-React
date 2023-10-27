@@ -1,5 +1,6 @@
+@charset "UTF-8";
+/* Cette feuille de style concerne les aperçus des logements de la page d'accueil. */
 .thumb {
-  /* width: 340px; */
   height: 340px;
   border-radius: 10px;
   position: relative;

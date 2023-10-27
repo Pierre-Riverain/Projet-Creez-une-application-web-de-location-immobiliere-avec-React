@@ -1,0 +1,28 @@
+@import '../../utils/styles/mixins';
+@import '../../utils/styles/variables';
+
+/* Cette feuille de style concerne le contenu général de la page d'erreur (404). */
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 139px;
+    padding: 139px 0;
+    @include color();
+
+    h1 {
+        margin: 0;
+        @include font-style(288px, 700);
+    }
+
+    h2 {
+        @include font-style(36px);
+    }
+
+    .linkToMainPage {
+        @include color();
+        @include font-style(18px);
+        text-decoration: underline;
+    }
+}

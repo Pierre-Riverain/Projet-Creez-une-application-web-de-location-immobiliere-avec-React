@@ -1,5 +1,8 @@
+@import '../../utils/styles/mixins';
+@import '../../utils/styles/variables';
+
+/* Cette feuille de style concerne les aperçus des logements de la page d'accueil. */
 .thumb {
-    /* width: 340px; */
     height: 340px;
     border-radius: 10px;
     position: relative;
@@ -29,10 +32,8 @@
     }
 
     h2 {
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-size: 18px;
-        font-weight: 500;
+        @include color(second);
+        @include font-style(18px);
         z-index: 3;
     }
 }

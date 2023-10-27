@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Cette feuille de style concerne le contenu général de la page d'acceuil. */
 .home-section {
   padding: 50px 100px;
   display: flex;
@@ -13,8 +15,8 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=index.css.map */

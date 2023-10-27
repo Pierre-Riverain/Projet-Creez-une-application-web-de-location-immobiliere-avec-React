@@ -1,7 +1,10 @@
+@import '../../utils/styles/mixins';
+@import '../../utils/styles/variables';
+
 /* Cette feuille de style concerne le style du composant 'Footer'. */
 footer {
     background-color: black;
-    color: white;
+    @include color(second);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,9 +13,7 @@ footer {
     padding-bottom: 29px;
     gap: 29px;
     p {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 500;
+        @include font-style(24px);
         margin-bottom: 0;
     }
 }

@@ -1,3 +1,4 @@
+/* Cette feuille de style concerne le composant 'Gallery'. */
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
