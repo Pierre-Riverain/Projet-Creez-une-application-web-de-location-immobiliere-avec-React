@@ -8,7 +8,9 @@ function Background(props) {
     return (
         <div className="background">
             <img src={picture.source} alt={picture.description}/>
-            {props.children}
+            <div>
+                {props.children}
+            </div>
         </div>
     );
 }

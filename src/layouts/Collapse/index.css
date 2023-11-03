@@ -1,0 +1,69 @@
+/* Cette feuille de style concerne le composant 'Collapse'. */
+.collapse {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: -20px;
+  transition: all 250ms;
+}
+.collapse-top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 15px;
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  z-index: 1;
+}
+.collapse-top-bar * {
+  margin: 0;
+}
+.collapse-arrow {
+  width: 32px;
+  height: 32px;
+  transition: transform 250ms;
+}
+.collapse-content {
+  position: relative;
+  top: -5px;
+  width: 100%;
+  height: 0;
+  padding: 0px 20px 20px;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  color: #ff6060;
+  border-radius: 0 0 5px 5px;
+  transform: scaleY(0);
+  box-sizing: border-box;
+  transform-origin: top;
+  transition: all 250ms;
+  z-index: 0;
+}
+.collapse-content > * {
+  transform: translateY(-100px);
+  transition: transform 250ms;
+}
+.collapse p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.collapse-open {
+  margin-bottom: 0;
+}
+.collapse-open .collapse-arrow {
+  transform: rotate(-180deg);
+}
+.collapse-open .collapse-content {
+  height: 100%;
+  transform: scaleY(1);
+}
+.collapse-open .collapse-content > * {
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -13,3 +13,7 @@
 @mixin color($color-selected: main) {
     color: map-get($color, $color-selected);
 }
+
+@mixin background-color($color-selected: main) {
+    background-color: map-get($color, $color-selected);
+}
