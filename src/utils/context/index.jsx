@@ -13,7 +13,7 @@ export const DatasProvider = (props) => {
         if (index => 0 && index <= lastIndex) {
             return listOfAccommodations[index];
         } else {
-            return null;
+            return undefined;
         }
     };
     

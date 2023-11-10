@@ -7,6 +7,7 @@ import Tag from '../../components/Tag';
 import Host from '../../components/Host';
 import Collapse from '../../components/Collapse';
 import Rating from '../../components/Rating';
+import Error from '../Error';
 
 /* Ce composant correspond à la page des logements. */
 function Accommodation() {
@@ -14,47 +15,47 @@ function Accommodation() {
     const {getAccommodation} = useContext(DatasContext);
     const accommodation = getAccommodation(idAccommodation);
 
-    if (accommodation === null) {
-        window.location += "/error-accommodation-not-existed";
-    }
-
-    return (
-        <div className="accommodation">
-            <Slider listOfPictures={accommodation.pictures}/>
-            <div className="accommodation-informations">
-                <div className="accommodation-informations-title-location">
-                    <h1>{accommodation.title}</h1>
-                    <h2>{accommodation.location}</h2>
-                    <div>
-                        {accommodation.tags.map((tag) => (
-                            <Tag name={tag} key={tag}/>
-                        ))}
+    console.log(accommodation);
+    if (accommodation !== undefined) {
+        return (
+            <div className="accommodation">
+                <Slider listOfPictures={accommodation.pictures}/>
+                <div className="accommodation-informations">
+                    <div className="accommodation-informations-title-location">
+                        <h1>{accommodation.title}</h1>
+                        <h2>{accommodation.location}</h2>
+                        <div>
+                            {accommodation.tags.map((tag) => (
+                                <Tag name={tag} key={tag}/>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="accommodation-informations-host-rating">
+                        <Host host={accommodation.host}/>
+                        <Rating rating={accommodation.rating}/>
                     </div>
                 </div>
-                <div className="accommodation-informations-host-rating">
-                    <Host host={accommodation.host}/>
-                    <Rating rating={accommodation.rating}/>
+                <div className="accommodation-collapses">
+                    <Collapse title="Description">
+                        <p>
+                            {accommodation.description}
+                        </p>
+                    </Collapse>
+                    <Collapse title="Équipements">
+                        <ul>
+                            {
+                                accommodation.equipments.map((equipment) => (
+                                    <li key={`equipment-${accommodation.equipments.indexOf(equipment)}`}>{equipment}</li>
+                                ))
+                            }
+                        </ul>
+                    </Collapse>
                 </div>
             </div>
-            <div className="accommodation-collapses">
-                <Collapse title="Description">
-                    <p>
-                        {accommodation.description}
-                    </p>
-                </Collapse>
-                <Collapse title="Équipements">
-                    <ul>
-                        {
-                            accommodation.equipments.map((equipment) => (
-                                <li key={`equipment-${accommodation.equipments.indexOf(equipment)}`}>{equipment}</li>
-                            ))
-                        }
-                    </ul>
-                </Collapse>
-            </div>
-
-        </div>
-    );
+        );
+    } else {
+        return <Error/>
+    }
 
 
 }
