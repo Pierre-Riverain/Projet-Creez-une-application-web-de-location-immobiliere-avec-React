@@ -1,10 +1,10 @@
 /* Cette feuille de style concerne le composant 'Background'. */
-.background {
+.banner {
   position: relative;
   height: 223px;
   border-radius: 25px;
 }
-.background > * {
+.banner > * {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,12 +12,17 @@
   height: 100%;
   border-radius: 25px;
 }
-.background img {
+.banner img {
   z-index: 0;
   object-fit: cover;
 }
-.background div {
+.banner-opacity {
   z-index: 1;
+  background-color: black;
+  opacity: 0.3;
+}
+.banner div {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;

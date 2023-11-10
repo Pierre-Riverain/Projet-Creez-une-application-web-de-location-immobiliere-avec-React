@@ -1,5 +1,8 @@
+@import '../../utils/styles/mixins';
+@import '../../utils/styles/variables';
+
 /* Cette feuille de style concerne le composant 'Background'. */
-.background {
+.banner {
     position: relative;
     height: 223px;
     border-radius: 25px;
@@ -15,11 +18,16 @@
         z-index: 0;
         object-fit: cover;
     }
-
-    div {
+    &-opacity {
         z-index: 1;
+        @include background-color(fourth);
+        opacity: 0.3;
+    }
+    div {
+        z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
 }

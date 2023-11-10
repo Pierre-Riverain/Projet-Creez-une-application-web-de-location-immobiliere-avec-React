@@ -1,4 +1,4 @@
-import Background from '../../components/Background';
+import Banner from '../../components/Banner';
 import Collapse from '../../components/Collapse';
 
 import backgroundImage from '../../assets/background-2.png';
@@ -15,7 +15,7 @@ function About() {
 
     return (
         <section className="about">
-            <Background picture={picture}></Background>
+            <Banner picture={picture}></Banner>
             <div className='about-collapse-container'>
                 <Collapse title="Fiabilité">
                     <p>

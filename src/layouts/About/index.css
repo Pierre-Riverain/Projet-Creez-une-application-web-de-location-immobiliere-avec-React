@@ -10,7 +10,7 @@
 .about .dropdown {
   width: 100%;
 }
-.about .background {
+.about .banner {
   position: relative;
   height: 223px;
   width: 100%;
@@ -29,6 +29,11 @@
 }
 .about .collapse {
   width: 100%;
+}
+.about .collapse-top-bar {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=index.css.map */

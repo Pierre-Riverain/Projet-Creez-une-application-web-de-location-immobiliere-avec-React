@@ -1,25 +1,27 @@
-import { useDatas } from '../../utils/hooks';
 import Thumb from '../Thumb';
 import '../../layouts/Gallery/index.css';
+import { useContext } from 'react';
+import { DatasContext } from '../../utils/context';
 
 /* Ce composant représente le container qui permet d'afficher la liste des hébergements. */
 function Gallery() {
     
-    const { datas } = useDatas();
-    const listOfAccommodations = datas;
+    const {listOfAccommodations} = useContext(DatasContext);
     return (
         <div className='gallery-container'>
-            <ul className='gallery'>
+            <div className='gallery'>
                 {
                     listOfAccommodations && listOfAccommodations.map(accommodationItem => (
-                        <li key={accommodationItem.id}>
-                            <Thumb accommodation={accommodationItem}/>
-                        </li>
+                        <Thumb accommodation={accommodationItem} index={listOfAccommodations.indexOf(accommodationItem)} key={accommodationItem.id} />
                     ))
                 }
-            </ul>
+            </div>
         </div>
     );
 }
 
 export default Gallery;
+
+function onAccommodationClicked() {
+    
+}

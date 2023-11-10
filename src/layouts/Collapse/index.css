@@ -5,7 +5,10 @@
   flex-direction: column;
   margin: 0;
   margin-bottom: -20px;
-  transition: all 250ms;
+  transition: all 500ms;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 .collapse-top-bar {
   display: flex;
@@ -24,7 +27,7 @@
 .collapse-arrow {
   width: 32px;
   height: 32px;
-  transition: transform 250ms;
+  transition: transform 500ms;
 }
 .collapse-content {
   position: relative;
@@ -36,21 +39,24 @@
   overflow: hidden;
   background-color: #f6f6f6;
   color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   border-radius: 0 0 5px 5px;
   transform: scaleY(0);
   box-sizing: border-box;
   transform-origin: top;
-  transition: all 250ms;
+  transition: all 500ms;
   z-index: 0;
 }
 .collapse-content > * {
   transform: translateY(-100px);
-  transition: transform 250ms;
+  transition: transform 500ms;
 }
-.collapse p {
+.collapse-content * {
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
 }
 .collapse-open {
   margin-bottom: 0;

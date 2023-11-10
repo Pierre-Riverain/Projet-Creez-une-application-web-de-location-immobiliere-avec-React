@@ -27,8 +27,3 @@ function Collapse(props) {
 }
 
 export default Collapse;
-
-/* Cette fonction sert pour exécuter les animations lorsque l'utilisateur clique sur */
-/* function animate(element, animation, direction) {
-    element.style.animation = `${animation} 250ms linear 0 1 ${direction} both play`;
-} */

@@ -8,20 +8,25 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About';
+import Accommodation from './pages/Accommodation';
+import { DatasProvider } from './utils/context';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/a-propos" element={<About/>}/>
-        <Route path="*" element={<Error/>}/>
-      </Routes>
-      <Footer/>
-    </Router>
+    <DatasProvider>
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/a-propos" element={<About/>}/>
+          <Route path="/hebergement/:idAccommodation" element={<Accommodation/>}/>
+          <Route path="*" element={<Error/>}/>
+        </Routes>
+        <Footer/>
+      </Router>
+    </DatasProvider>
   </React.StrictMode>
 );
 

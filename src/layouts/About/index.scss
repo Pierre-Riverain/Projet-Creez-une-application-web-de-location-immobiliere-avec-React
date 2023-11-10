@@ -14,7 +14,7 @@
         width: 100%;
     }
     
-    .background {
+    .banner {
         position: relative;
         height: 223px;
         width: 100%;
@@ -35,5 +35,9 @@
 
     .collapse {
         width: 100%;
+
+        &-top-bar {
+            @include font-style(24px);
+        }
     }
 }

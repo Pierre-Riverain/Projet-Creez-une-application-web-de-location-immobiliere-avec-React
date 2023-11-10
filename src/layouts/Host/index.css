@@ -1,0 +1,32 @@
+/* Cette feuille de style concerne le composant 'Owner'. */
+.host {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 3px;
+  align-items: flex-start;
+  gap: 10px;
+}
+.host div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 64px;
+}
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.host p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+  text-align: right;
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

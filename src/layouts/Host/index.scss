@@ -1,0 +1,33 @@
+@import '../../utils/styles/mixins';
+@import '../../utils/styles/variables';
+
+/* Cette feuille de style concerne le composant 'Owner'. */
+
+.host {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 3px;
+    align-items: flex-start;
+    gap: 10px;
+    div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: 64px;
+    }
+
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    p {
+        @include font-style(18px);
+        @include color(main);
+        text-align: right;
+        margin: 0;
+    }
+}

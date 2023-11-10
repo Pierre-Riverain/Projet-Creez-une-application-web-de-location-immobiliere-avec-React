@@ -1,5 +1,5 @@
 import backgroundImage from '../../assets/background.png';
-import Background from '../../components/Background';
+import Banner from '../../components/Banner';
 import Gallery from '../../components/Gallery';
 import '../../layouts/Home/index.css';
 
@@ -11,9 +11,9 @@ function Home() {
     }
     return (
         <section className="home-section">
-            <Background picture={picture}>
+            <Banner picture={picture}>
                 <h1>Chez vous, partout et ailleurs</h1>
-            </Background>
+            </Banner>
             <Gallery/>
         </section>
     );

@@ -8,7 +8,8 @@
     flex-direction: column;
     margin: 0;
     margin-bottom:-20px;
-    transition: all 250ms;
+    transition: all 500ms;
+    @include font-style(18px);
     &-top-bar {
         display: flex;
         flex-direction: row;
@@ -27,7 +28,7 @@
     &-arrow {
         width: 32px;
         height: 32px;
-        transition: transform 250ms;
+        transition: transform 500ms;
     }
 
     &-content {
@@ -40,22 +41,23 @@
         overflow: hidden;
         @include background-color(third);
         @include color(main);
+        @include font-style(18px, 400);
         border-radius: 0 0 5px 5px;
         transform: scaleY(0);
         box-sizing: border-box;
         transform-origin: top;
-        transition: all 250ms;
+        transition: all 500ms;
         z-index: 0;
         > * {
             transform: translateY(-100px);
-            transition: transform 250ms;
+            transition: transform 500ms;
+        }
+
+        * {
+            @include font-style(18px, 400);
         }
     }
 
-    p {
-        @include font-style(24px);
-    }
-    
     &-open {
         margin-bottom: 0;
         .collapse {

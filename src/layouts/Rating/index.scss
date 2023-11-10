@@ -1,0 +1,11 @@
+/* Cette feuille de style concerne le composant 'Rating'. */
+.rating {
+    display: flex;
+    gap: 20px;
+    height: 36px;
+
+    img {
+        width: 36px;
+        height: 36px;
+    }
+}
