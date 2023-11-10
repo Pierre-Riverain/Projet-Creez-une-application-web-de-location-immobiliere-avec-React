@@ -8,20 +8,14 @@ function Gallery() {
     
     const {listOfAccommodations} = useContext(DatasContext);
     return (
-        <div className='gallery-container'>
-            <div className='gallery'>
-                {
-                    listOfAccommodations && listOfAccommodations.map(accommodationItem => (
-                        <Thumb accommodation={accommodationItem} index={listOfAccommodations.indexOf(accommodationItem)} key={accommodationItem.id} />
-                    ))
-                }
-            </div>
+        <div className='gallery'>
+            {
+                listOfAccommodations && listOfAccommodations.map(accommodationItem => (
+                    <Thumb accommodation={accommodationItem} index={listOfAccommodations.indexOf(accommodationItem)} key={accommodationItem.id} />
+                ))
+            }
         </div>
     );
 }
 
 export default Gallery;
-
-function onAccommodationClicked() {
-    
-}
