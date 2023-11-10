@@ -15,7 +15,6 @@ function Accommodation() {
     const {getAccommodation} = useContext(DatasContext);
     const accommodation = getAccommodation(idAccommodation);
 
-    console.log(accommodation);
     if (accommodation !== undefined) {
         return (
             <div className="accommodation">

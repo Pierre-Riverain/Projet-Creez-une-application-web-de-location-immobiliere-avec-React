@@ -8,11 +8,11 @@ function Thumb(props) {
     const index = props.index;
     
     return (
-        <div className='thumb fill'>
+        <Link to={"/hebergement/" + index} className='thumb fill'>
             <img src={accommodation.cover} alt={accommodation.title} className='fill'/>
             <div className='fill'/>
             <h2>{accommodation.title}</h2>
-        </div>
+        </Link>
     );
 }
 

@@ -9,11 +9,11 @@ function Rating(props) {
     let resultOfCheck = [];
 
     for (let i = 0; i < rating; i++) {
-        resultOfCheck.push(<img src={star} alt={`Etoile n°${i+1} activée.`}/>);
+        resultOfCheck.push(<img src={star} alt={`Etoile n°${i+1} activée.`} key={"etoile-"+i}/>);
     }
 
     for(let i = 0; i < (5 - rating); i++) {
-        resultOfCheck.push(<img src={starDisabled} alt={`Etoile n°${i+1} désactivée.`}/>);
+        resultOfCheck.push(<img src={starDisabled} alt={`Etoile n°${i+1} désactivée.`} key={"etoile-"+(i+rating)}/>);
     }
 
     return (
