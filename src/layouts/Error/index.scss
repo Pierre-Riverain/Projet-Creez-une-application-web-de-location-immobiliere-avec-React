@@ -11,18 +11,37 @@
     padding: 139px 0;
     @include color();
 
+    @include responsive(mobile) {
+        gap: 133px;
+        padding: 133px 0;
+    }
+
     h1 {
         margin: 0;
         @include font-style(288px, 700);
+
+        @include responsive(mobile) {
+            @include font-style(96px, 700);
+        }
     }
 
     h2 {
         @include font-style(36px);
+        text-align: center;
+
+        @include responsive(mobile) {
+            @include font-style(18px);
+            width: 260px;
+        }
     }
 
     .linkToMainPage {
         @include color();
         @include font-style(18px);
         text-decoration: underline;
+
+        @include responsive(mobile) {
+            @include font-style(14px);
+        }
     }
 }

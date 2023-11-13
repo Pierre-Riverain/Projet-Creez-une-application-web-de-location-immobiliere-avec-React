@@ -4,9 +4,21 @@
   gap: 20px;
   height: 36px;
 }
+@media screen and (max-width: 768px) {
+  .rating {
+    gap: 10px;
+    height: 18px;
+  }
+}
 .rating img {
   width: 36px;
   height: 36px;
+}
+@media screen and (max-width: 768px) {
+  .rating img {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

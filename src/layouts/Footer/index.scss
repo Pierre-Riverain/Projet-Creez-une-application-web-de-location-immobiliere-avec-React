@@ -12,8 +12,21 @@ footer {
     padding-top: 66px;
     padding-bottom: 29px;
     gap: 29px;
+    @include responsive(mobile) {
+        padding-bottom: 58px;
+        gap: 10px;
+    }
     p {
         @include font-style(24px);
         margin-bottom: 0;
+
+
+        @include responsive(mobile) {
+            @include font-style(12px);
+            margin-top: 0;
+            width: 133px;
+            text-wrap: balance;
+            text-align: center;
+        }
     }
 }

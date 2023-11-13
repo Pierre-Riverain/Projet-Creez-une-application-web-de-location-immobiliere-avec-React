@@ -7,6 +7,12 @@
   padding: 20px;
   display: flex;
   flex-direction: column-reverse;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .thumb {
+    height: 255px;
+  }
 }
 .thumb img {
   object-fit: cover;

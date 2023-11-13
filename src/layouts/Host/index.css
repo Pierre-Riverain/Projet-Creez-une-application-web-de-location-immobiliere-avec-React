@@ -15,10 +15,21 @@
   align-items: flex-end;
   height: 64px;
 }
+@media screen and (max-width: 768px) {
+  .host div {
+    height: 32px;
+  }
+}
 .host img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .host img {
+    width: 32px;
+    height: 32px;
+  }
 }
 .host p {
   font-family: "Montserrat", sans-serif;
@@ -27,6 +38,13 @@
   color: #ff6060;
   text-align: right;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .host p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -7,6 +7,10 @@
     position: relative;
     width: 100%;
     height: 415px;
+
+    @include responsive(mobile) {
+        height: 255px;
+    }
     
     &-img {
         position: absolute;
@@ -16,6 +20,25 @@
         border-radius: 25px;
         object-fit: cover;
         background-position: center;
+        z-index: 1;
+
+        @include responsive(mobile) {
+            border-radius: 10px;
+        }
+    }
+    &-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border-radius: 25px;
+        @include background-color(fourth);
+        z-index: 2;
+        opacity: 0.3;
+
+        @include responsive(mobile) {
+            border-radius: 10px;
+        }
     }
 
     &-arrow-container {
@@ -28,6 +51,18 @@
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
+        z-index: 3;
+
+        @include responsive(mobile) {
+            padding: 0;
+        }
+
+        img {
+            @include responsive(mobile) {
+                width: 24px;
+                height: 24px;
+            }
+        }
     }
 
     &-number {
@@ -37,5 +72,10 @@
         width: 100%;
         @include font-style(18px);
         @include color(second);
+        z-index: 3;
+
+        @include responsive(mobile) {
+            display: none;
+        }
     }
 }

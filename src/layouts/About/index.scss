@@ -10,6 +10,11 @@
     align-items: center;
     gap: 38px;
 
+    @include responsive(mobile) {
+        margin: 19px 20px;
+        gap: 19px;
+    }
+
     .dropdown {
         width: 100%;
     }
@@ -19,6 +24,10 @@
         height: 223px;
         width: 100%;
         border-radius: 25px;
+
+        @include responsive(mobile) {
+            height: 111px;
+        }
     }
 
     &-collapse-container {
@@ -31,6 +40,11 @@
         padding: 0 108px;
         width: 100%;
         box-sizing: border-box;
+
+        @include responsive(mobile) {
+            gap: 20px;
+            padding: 0;
+        }
     }
 
     .collapse {
@@ -38,6 +52,10 @@
 
         &-top-bar {
             @include font-style(24px);
+            
+            @include responsive(mobile) {
+                @include font-style(13px);
+            }
         }
     }
 }

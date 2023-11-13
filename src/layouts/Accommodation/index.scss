@@ -5,28 +5,50 @@
 .accommodation {
     margin: 50px 100px;
 
+    @include responsive(mobile) {
+        margin: 27px 20px;
+    }
+
     .slider {
         width: 100%;
         height: 415px;
         margin-bottom: 24px;
         padding: 6px 0;
+
+        @include responsive(mobile) {
+            margin-bottom: 15px;
+        }
     }
 
     h1 {
         @include font-style(36px);
         @include color(main);
         margin: 0;
+
+        @include responsive(mobile) {
+            @include font-style(18px);
+            text-wrap: balance;
+        }
     }
 
     h2 {
         @include font-style(18px);
         @include color(main);
         margin: 0;
+
+        @include responsive(mobile) {
+            @include font-style(14px);
+        }
     }
 
     &-informations {
         display: flex;
         justify-content: space-between;
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            gap: 10px;
+        }
 
         &-title-location {
             display: flex;
@@ -37,6 +59,9 @@
                 display: flex;
                 gap: 10px;
                 margin-top: 20px;
+                @include responsive(mobile) {
+                    margin-top: 5px;
+                }
             }
         }
 
@@ -44,6 +69,11 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            @include responsive(mobile) {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
     }
 
@@ -57,6 +87,12 @@
         gap: 76px;
         width: 100%;
         margin-top: 24px;
+
+        @include responsive(mobile) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
     }
     li {
         list-style: none;

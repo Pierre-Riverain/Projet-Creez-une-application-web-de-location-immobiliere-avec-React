@@ -1,11 +1,24 @@
+@import '../../utils/styles/mixins';
+@import '../../utils/styles/variables';
+
 /* Cette feuille de style concerne le composant 'Rating'. */
 .rating {
     display: flex;
     gap: 20px;
     height: 36px;
 
+    @include responsive(mobile) {
+        gap: 10px;
+        height: 18px;
+    }
+
     img {
         width: 36px;
         height: 36px;
+
+        @include responsive(mobile) {
+            width: 18px;
+            height: 18px;
+        }
     }
 }

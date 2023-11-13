@@ -4,11 +4,26 @@ header {
   justify-content: space-between;
   margin: 45px 100px 0;
 }
+@media screen and (max-width: 768px) {
+  header {
+    margin: 20px 20px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header img {
+    height: 46px;
+  }
+}
 header nav {
   width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    width: 130px;
+  }
 }
 header .link {
   color: #ff6060;
@@ -19,6 +34,13 @@ header .link {
 }
 header .link:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  header .link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

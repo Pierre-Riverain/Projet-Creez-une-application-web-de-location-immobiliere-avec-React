@@ -2,11 +2,21 @@
 .accommodation {
   margin: 50px 100px;
 }
+@media screen and (max-width: 768px) {
+  .accommodation {
+    margin: 27px 20px;
+  }
+}
 .accommodation .slider {
   width: 100%;
   height: 415px;
   margin-bottom: 24px;
   padding: 6px 0;
+}
+@media screen and (max-width: 768px) {
+  .accommodation .slider {
+    margin-bottom: 15px;
+  }
 }
 .accommodation h1 {
   font-family: "Montserrat", sans-serif;
@@ -15,6 +25,14 @@
   color: #ff6060;
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  .accommodation h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+}
 .accommodation h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -22,9 +40,22 @@
   color: #ff6060;
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  .accommodation h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 .accommodation-informations {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .accommodation-informations {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .accommodation-informations-title-location {
   display: flex;
@@ -37,10 +68,22 @@
   gap: 10px;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .accommodation-informations-title-location div {
+    margin-top: 5px;
+  }
+}
 .accommodation-informations-host-rating {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .accommodation-informations-host-rating {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .accommodation .tag {
   margin: 0;
@@ -51,6 +94,13 @@
   gap: 76px;
   width: 100%;
   margin-top: 24px;
+}
+@media screen and (max-width: 768px) {
+  .accommodation-collapses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .accommodation li {
   list-style: none;

@@ -10,11 +10,28 @@ footer {
   padding-bottom: 29px;
   gap: 29px;
 }
+@media screen and (max-width: 768px) {
+  footer {
+    padding-bottom: 58px;
+    gap: 10px;
+  }
+}
 footer p {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  footer p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 0;
+    width: 133px;
+    text-wrap: balance;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

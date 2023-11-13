@@ -10,7 +10,11 @@
     border-radius: 25px;
     @include background-color(third);
 
-    li {
-        list-style: none;
+    @include responsive(mobile) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @include background-color(second);
+        padding: 0;
     }
 }

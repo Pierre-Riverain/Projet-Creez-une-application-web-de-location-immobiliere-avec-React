@@ -1,5 +1,5 @@
 @mixin responsive($screen-responsive-width-size-selected) {
-    @media screen and (max-width: map-get($screen-responsive-width-size, $screen-responsive-width-size-selected)) {
+    @media screen and (max-width: map-get($responsive-screen-width-size, $screen-responsive-width-size-selected)) {
         @content;
     }
 }

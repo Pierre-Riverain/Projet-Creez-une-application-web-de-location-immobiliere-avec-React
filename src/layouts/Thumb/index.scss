@@ -9,6 +9,11 @@
     padding: 20px;
     display: flex;
     flex-direction: column-reverse;
+    text-decoration: none;
+
+    @include responsive(mobile) {
+        height: 255px;
+    }
     
     img {
         object-fit: cover;
@@ -33,5 +38,4 @@
         height: 100%;
         border-radius: 10px;
     }
-    
 }

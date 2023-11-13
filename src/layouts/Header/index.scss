@@ -6,11 +6,23 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 45px 100px 0;
+
+    @include responsive(mobile) {
+        margin: 20px 20px 0;
+    }
+    img {
+        @include responsive(mobile) {
+            height: 46px;
+        }
+    }
     nav {
         width: 280px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include responsive(mobile) {
+            width: 130px;
+        }
     }
     .link {
         @include color();
@@ -19,6 +31,10 @@ header {
 
         &:hover {
             text-decoration: underline;
+        }
+
+        @include responsive(mobile) {
+            @include font-style(12px);
         }
     }
 }

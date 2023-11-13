@@ -19,6 +19,7 @@ function Slider(props) {
 
     return (
         <div className="slider">
+            <div className="slider-div"></div>
             <img src={listOfPictures[currentPicture]} alt={title} className="slider-img" />
             { moreThanOnePicture && 
                 <div className="slider-arrow-container">

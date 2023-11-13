@@ -10,6 +10,11 @@
     margin-bottom:-20px;
     transition: all 500ms;
     @include font-style(18px);
+
+    @include responsive(mobile) {
+        @include font-style(13px);
+    }
+    
     &-top-bar {
         display: flex;
         flex-direction: row;
@@ -20,6 +25,10 @@
         @include color(second);
         border-radius: 5px;
         z-index: 1;
+
+        @include responsive(mobile) {
+            padding: 0px 10px;
+        }
         * {
             margin: 0;
         }
@@ -48,6 +57,10 @@
         transform-origin: top;
         transition: all 500ms;
         z-index: 0;
+
+        @include responsive(mobile) {
+            @include font-style(12px);
+        }
         > * {
             transform: translateY(-100px);
             transition: transform 500ms;
@@ -55,6 +68,10 @@
 
         * {
             @include font-style(18px, 400);
+
+            @include responsive(mobile) {
+                @include font-style(12px);
+            }
         }
     }
 
