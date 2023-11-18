@@ -63,13 +63,14 @@
   gap: 10px;
   padding-top: 6px;
 }
-.accommodation-informations-title-location div {
+.accommodation-informations-title-location > div {
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
-  .accommodation-informations-title-location div {
+  .accommodation-informations-title-location > div {
     margin-top: 5px;
   }
 }
@@ -84,6 +85,9 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+.accommodation-tag {
+  flex-wrap: wrap;
 }
 .accommodation .tag {
   margin: 0;
